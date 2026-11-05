@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>StockMaster Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📦 StockMaster Pro</h1>
+      <div class="row" style="margin: 0">
+        <select id="shop" title="Boutique"></select>
+        <button
+          id="shopcfg"
+          class="sec"
+          onclick="shopSettings()"
+          title="Nom, logo et infos de la boutique"
+        >
+          ⚙️ Ma boutique
+        </button>
+        <select id="role" title="Rôle">
+          <option value="admin">Administrateur</option>
+          <option value="cash">Caissier</option>
+          <option value="stock">Gestionnaire de stock</option>
+        </select>
+      </div>
+    </header>
+    <nav id="nav"></nav>
+    <main id="view"></main>
+    <div id="modal"><div class="box" id="mbox"></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
